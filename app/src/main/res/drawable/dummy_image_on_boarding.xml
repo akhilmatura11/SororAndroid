@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/color_primary" />
+            <size
+                android:width="180dp"
+                android:height="180dp" />
+        </shape>
+    </item>
+    <!--    <item  android:bottom="40dp">-->
+    <!--        <bitmap android:src="@drawable/splash_drawable_1"/>-->
+    <!--    </item>-->
+</layer-list>
