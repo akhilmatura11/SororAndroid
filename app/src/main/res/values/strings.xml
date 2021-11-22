@@ -17,12 +17,32 @@
     <string name="action_sign_up_with_google">Sign Up With Google</string>
 
     <!--    prompts-->
-    <string name="prompt_email">Email*</string>
-    <string name="prompt_password">Password*</string>
-    <string name="prompt_enter_your_name">Name*</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_email_mandatory">Email*</string>
+    <string name="prompt_password_mandatory">Password*</string>
+    <string name="prompt_name_mandatory">Name*</string>
     <string name="prompt_phone">Phone Number (Optional)</string>
-    <string name="prompt_confirm_password">Confirm Password*</string>
+    <string name="prompt_confirm_password_mandatory">Confirm Password*</string>
+
     <string name="dummy_image">image</string>
+    <string name="lets_sign_in_text">Lets sign in</string>
+    <string name="welcome_back_text">Welcome Back</string>
+    <string name="credentials_use_text">Please Use Your Soror Credentials</string>
+    <string name="forget_password_text">Forget Password</string>
+    <string name="action_register">Register</string>
+    <string name="don_t_have_an_account_text">Don’t have an account?</string>
+    <string name="didn_t_receive_a_code_text">Didn’t receive a code?</string>
+    <string name="action_verify">Verify</string>
+    <string name="action_resend_code">Resend code</string>
+    <string name="please_enter_your_code_here_text">Please enter your code here</string>
+    <string name="otp_verification_sub_title_text">We are sending you an OTP to verify your Phone Number/Email</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="congratulations_text">Congratulations</string>
+    <string name="action_do_it_later">Do it later</string>
+    <string name="action_complete_your_profile">Complete Your Profile</string>
+    <string name="subtitle_2_welcome">As a first time user, visit your profile and update your details</string>
+    <string name="subtitle_welcome_text">You have registered Successfully!</string>
 
     <!--    arrays-->
     <string-array name="countryCode">
