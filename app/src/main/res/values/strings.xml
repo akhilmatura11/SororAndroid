@@ -1,29 +1,30 @@
 <resources>
     <string name="app_name">SororAndroid</string>
+
     <string name="dummy_text_heading">Lorem Ipsum</string>
     <string name="dummy_text_sub_title">Lorem Ipsum Dolor Sit Amet, Consetetur Sadipscing Elitr, Sed Diam Nonumy Eirmod Tempor Invidunt Ut Labore Et.</string>
+
+    <string name="welcome_text">Welcome,</string>
+    <string name="create_account_sign_up">Create Account</string>
+    <string name="divider_text_sign_up">or</string>
+    <string name="already_have_account_text">Already have account?</string>
+    <string name="terms_text">By singing up, you agree to our terms of Service and acknowledge that you have read our Privacy Policy</string>
+
+    <!--    actions-->
     <string name="action_login">Log In</string>
     <string name="action_sign_up">Sign Up</string>
-    <string name="title_activity_login">LoginActivity</string>
+    <string name="action_sign_up_with_facebook">Sign Up With Facebook</string>
+    <string name="action_sign_up_with_google">Sign Up With Google</string>
+
+    <!--    prompts-->
     <string name="prompt_email">Email*</string>
     <string name="prompt_password">Password*</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="text_welcome">Welcome,</string>
-    <string name="create_account">Create Account</string>
     <string name="prompt_enter_your_name">Name*</string>
     <string name="prompt_phone">Phone Number (Optional)</string>
     <string name="prompt_confirm_password">Confirm Password*</string>
-    <string name="divider_text_sign_up">or</string>
-    <string name="sign_up_with_facebook">Sign Up With Facebook</string>
-    <string name="sign_up_with_google">Sign Up With Google</string>
-    <string name="already_have_account_log_in">Already have account?</string>
-    <string name="terms_text">By singing up, you agree to our terms of Service and acknowledge that you have read our Privacy Policy</string>
+    <string name="dummy_image">image</string>
 
+    <!--    arrays-->
     <string-array name="countryCode">
         <item>IN +91</item>
     </string-array>

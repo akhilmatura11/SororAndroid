@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignUpActivity">
+    tools:context=".CreateAccountActivity">
 
     <ImageView
-        android:id="@+id/backButtonSignUp"
+        android:id="@+id/backButtonCreateAccount"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginStart="24dp"
@@ -27,7 +27,7 @@
         android:fitsSystemWindows="true"
         android:scrollbars="none"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/backButtonSignUp">
+        app:layout_constraintTop_toBottomOf="@id/backButtonCreateAccount">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -46,7 +46,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/createAccountTextSignUp"
+                android:id="@+id/createAccountText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -56,61 +56,91 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/welcomeTextSignUp" />
 
+            <TextView
+                android:id="@+id/nameTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/prompt_enter_your_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/createAccountText" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/nameEditTextLayout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="4dp"
                 app:boxBackgroundColor="@color/edit_box_color"
-                app:boxStrokeColor="@color/color_primary_dark"
-                app:hintEnabled="true"
+                app:boxStrokeColor="@color/edit_box_color"
+                app:hintEnabled="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/createAccountTextSignUp">
+                app:layout_constraintTop_toBottomOf="@id/nameTitle">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/nameEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/prompt_enter_your_name"
+                    android:fontFamily="@font/poppins_medium"
                     android:inputType="textPersonName|textCapWords"
                     android:selectAllOnFocus="true"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/emailTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/prompt_email"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nameEditTextLayout" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/emailEditTextLayout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:background="@color/edit_box_color"
+                android:layout_marginTop="4dp"
                 app:boxBackgroundColor="@color/edit_box_color"
-                app:boxStrokeColor="@color/color_primary_dark"
-                app:hintEnabled="true"
+                app:boxStrokeColor="@color/edit_box_color"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/nameEditTextLayout">
+                app:layout_constraintTop_toBottomOf="@id/emailTitle">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/emailEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/prompt_email"
                     android:inputType="textEmailAddress"
                     android:selectAllOnFocus="true"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <TextView
+                android:id="@+id/phoneNumberTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/prompt_phone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailEditTextLayout" />
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/phoneNumberConstraintLayout"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/emailEditTextLayout">
+                app:layout_constraintTop_toBottomOf="@id/phoneNumberTitle">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/countryCodeLayout"
@@ -143,8 +173,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     app:boxBackgroundColor="@color/edit_box_color"
-                    app:boxStrokeColor="@color/color_primary_dark"
-                    app:hintEnabled="true"
+                    app:boxStrokeColor="@color/edit_box_color"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.7"
@@ -155,186 +184,81 @@
                         android:id="@+id/phoneNumberEditText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/prompt_phone"
                         android:inputType="phone"
                         android:selectAllOnFocus="true"
                         android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
                 </com.google.android.material.textfield.TextInputLayout>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <TextView
+                android:id="@+id/passwordTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/prompt_password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phoneNumberConstraintLayout" />
+
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/passwordEditTextLayout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 app:boxBackgroundColor="@color/edit_box_color"
-                app:boxStrokeColor="@color/color_primary_dark"
-                app:hintEnabled="true"
+                app:boxStrokeColor="@color/edit_box_color"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/phoneNumberConstraintLayout">
+                app:layout_constraintTop_toBottomOf="@id/passwordTitle">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/passwordEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/prompt_password"
                     android:inputType="textPassword"
                     android:selectAllOnFocus="true"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
             </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/confirmPasswordTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/prompt_confirm_password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/passwordEditTextLayout" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/confirmPasswordEditTextLayout"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 app:boxBackgroundColor="@color/edit_box_color"
-                app:boxStrokeColor="@color/color_primary_dark"
-                app:hintEnabled="true"
+                app:boxStrokeColor="@color/edit_box_color"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/passwordEditTextLayout">
+                app:layout_constraintTop_toBottomOf="@id/confirmPasswordTitle">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/confirmPasswordEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/prompt_confirm_password"
                     android:inputType="textPassword"
                     android:selectAllOnFocus="true"
                     android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/dividerSignUp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@id/confirmPasswordEditTextLayout">
-
-                <TextView
-                    android:id="@+id/dividerTextSignUp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
-                    android:text="@string/divider_text_sign_up"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <View
-                    android:id="@+id/dividerLine1SignUp"
-                    android:layout_width="0dp"
-                    android:layout_height="2dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginEnd="8dp"
-                    android:background="@drawable/line_divider"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/dividerTextSignUp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <View
-                    android:id="@+id/dividerLine2SignUp"
-                    android:layout_width="0dp"
-                    android:layout_height="2dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="24dp"
-                    android:layout_marginEnd="8dp"
-                    android:background="@drawable/line_divider"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/dividerTextSignUp"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <Button
-                android:id="@+id/facebookLoginSignUp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:backgroundTint="@color/white"
-                android:drawableLeft="@drawable/fb"
-                android:elevation="4dp"
-                android:fontFamily="@font/poppins_medium"
-                android:gravity="center"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp"
-                android:text="@string/action_sign_up_with_facebook"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
-                app:layout_constraintTop_toBottomOf="@id/dividerSignUp" />
-
-            <Button
-                android:id="@+id/googleLoginSignUp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:backgroundTint="@color/white"
-                android:drawableLeft="@drawable/google"
-                android:elevation="4dp"
-                android:fontFamily="@font/poppins_medium"
-                android:gravity="center"
-                android:paddingTop="16dp"
-                android:paddingBottom="16dp"
-                android:text="@string/action_sign_up_with_google"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
-                app:layout_constraintTop_toBottomOf="@id/facebookLoginSignUp" />
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/existingSignUpLayout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/googleLoginSignUp">
-
-                <TextView
-                    android:id="@+id/existingAccountSignUp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="@string/already_have_account_text"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/loginTextSignUp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="4dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:gravity="center"
-                    android:text="@string/action_login"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                    android:textColor="@color/color_primary_dark"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@id/existingAccountSignUp"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <TextView
-                android:id="@+id/termsSignUp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:gravity="center"
-                android:text="@string/terms_text"
-                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-                app:layout_constraintTop_toBottomOf="@id/existingSignUpLayout" />
-
             <TextView
                 android:id="@+id/signUpButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="60dp"
                 android:background="@drawable/action_button_background"
                 android:fontFamily="@font/poppins_medium"
                 android:gravity="center"
@@ -343,7 +267,7 @@
                 android:text="@string/action_sign_up"
                 android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
                 android:textColor="@color/white"
-                app:layout_constraintTop_toBottomOf="@id/termsSignUp" />
+                app:layout_constraintTop_toBottomOf="@id/confirmPasswordEditTextLayout" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
