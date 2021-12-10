@@ -4,18 +4,45 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/drawable-v24/round_arrow_back_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/drawable/action_bar_background.xml" value="0.14290540540540542" />
         <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/drawable/action_button_background.xml" value="0.2203125" />
         <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/drawable/action_button_outline.xml" value="0.2203125" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/drawable/action_button_with_shadow.xml" value="0.1" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/drawable/chip_color_state.xml" value="0.14290540540540542" />
         <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/drawable/dummy_image_on_boarding.xml" value="0.2203125" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/drawable/line_divider.xml" value="0.14290540540540542" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/drawable/message_layout_background.xml" value="0.14290540540540542" />
         <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/drawable/round_arrow_back_24.xml" value="0.2203125" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/drawable/round_arrow_forward_24.xml" value="0.14290540540540542" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/drawable/rounded_background_selector.xml" value="0.14290540540540542" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/drawable/rounded_background_timer.xml" value="0.14290540540540542" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/drawable/spinner_round_background.xml" value="0.14290540540540542" />
         <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/drawable/splash_drawable.xml" value="0.2203125" />
-        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_create_account.xml" value="0.1" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/font-v26/font_poppins.xml" value="0.23076923076923078" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/font/font_poppins.xml" value="0.1505016722408027" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/font/moontime_regular.xml" value="0.15202702702702703" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/font/poppins.xml" value="0.1505016722408027" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/font/poppins_semibold.xml" value="0.1505016722408027" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_complete_your_profile.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_connect_to_people.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_create_account.xml" value="0.18" />
         <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_email_verification.xml" value="0.1983695652173913" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_home.xml" value="0.13243243243243244" />
         <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_login.xml" value="0.1983695652173913" />
         <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_main.xml" value="0.20244565217391305" />
-        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_onboarding.xml" value="0.1983695652173913" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_match_found.xml" value="0.12331081081081081" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_onboarding.xml" value="0.14" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_public_profile.xml" value="0.12331081081081081" />
         <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_sign_up.xml" value="0.1983695652173913" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_social_media.xml" value="0.12331081081081081" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_video_call.xml" value="0.13243243243243244" />
         <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_welcome.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/activity_what_your_thing.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/fragment_connections.xml" value="0.1" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/fragment_home.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/fragment_profile.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/layout/item_chat_message.xml" value="0.13243243243243244" />
+        <entry key="..\:/Users/Le/AndroidStudioProjects/SororAndroid/app/src/main/res/menu/bottom_nav_menu.xml" value="0.13110367892976588" />
       </map>
     </option>
   </component>

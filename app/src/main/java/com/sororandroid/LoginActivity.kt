@@ -14,14 +14,23 @@ class LoginActivity : AppCompatActivity() {
         binding.signUpTextLogin.setOnClickListener {
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
-        binding.loginButton.setOnClickListener {
+        binding.loginButtonLayout.setOnClickListener {
             //TODO code for login successful
         }
 
         binding.backButtonLogin.setOnClickListener {
             finish()
+        }
+
+        binding.facebookLoginLayout.setOnClickListener{
+            //TODO
+        }
+
+        binding.googleLoginLayout.setOnClickListener{
+            //TODO
         }
     }
 }

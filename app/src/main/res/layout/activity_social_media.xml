@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SocialMediaActivity">
+
+    <ImageView
+        android:id="@+id/backButtonSocialMedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/dummy_image"
+        android:src="@drawable/round_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/socialMediaTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:gravity="center"
+        android:text="@string/title_social_media"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/backButtonSocialMedia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/backButtonSocialMedia"
+        app:layout_constraintTop_toTopOf="@id/backButtonSocialMedia" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backButtonSocialMedia">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true">
+
+            <TextView
+                android:id="@+id/facebookTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Facebook"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/facebookTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:boxBackgroundColor="@color/edit_box_color"
+                app:boxStrokeColor="@color/edit_box_color"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@id/facebookTitle"
+                app:layout_constraintStart_toStartOf="@id/facebookTitle"
+                app:layout_constraintTop_toBottomOf="@id/facebookTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/facebookText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter facebook id (Optional)"
+                    android:inputType="textWebEmailAddress|textUri"
+                    android:selectAllOnFocus="true"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/instagramTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Instagram"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/facebookTextLayout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/instagramTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:boxBackgroundColor="@color/edit_box_color"
+                app:boxStrokeColor="@color/edit_box_color"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@id/facebookTitle"
+                app:layout_constraintStart_toStartOf="@id/facebookTitle"
+                app:layout_constraintTop_toBottomOf="@id/instagramTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/instagramText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter instagram id (Optional)"
+                    android:inputType="textWebEmailAddress|textUri"
+                    android:selectAllOnFocus="true"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/twitterTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Twitter"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/instagramTextLayout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/twitterTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:boxBackgroundColor="@color/edit_box_color"
+                app:boxStrokeColor="@color/edit_box_color"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@id/facebookTitle"
+                app:layout_constraintStart_toStartOf="@id/facebookTitle"
+                app:layout_constraintTop_toBottomOf="@id/twitterTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/twitterText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter twitter id (Optional)"
+                    android:inputType="textWebEmailAddress|textUri"
+                    android:selectAllOnFocus="true"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/snapchatTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Snapchat"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/twitterTextLayout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/snapchatTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:boxBackgroundColor="@color/edit_box_color"
+                app:boxStrokeColor="@color/edit_box_color"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@id/facebookTitle"
+                app:layout_constraintStart_toStartOf="@id/facebookTitle"
+                app:layout_constraintTop_toBottomOf="@id/snapchatTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/snapchatText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter snapchat id (Optional)"
+                    android:inputType="textWebEmailAddress|textUri"
+                    android:selectAllOnFocus="true"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tiktokTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Tiktok"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/snapchatTextLayout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiktokTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:boxBackgroundColor="@color/edit_box_color"
+                app:boxStrokeColor="@color/edit_box_color"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@id/facebookTitle"
+                app:layout_constraintStart_toStartOf="@id/facebookTitle"
+                app:layout_constraintTop_toBottomOf="@id/tiktokTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tiktokText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter tiktok id (Optional)"
+                    android:inputType="textWebEmailAddress|textUri"
+                    android:selectAllOnFocus="true"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/linkedInTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="LinkedIn"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tiktokTextLayout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/linkedInTextLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                app:boxBackgroundColor="@color/edit_box_color"
+                app:boxStrokeColor="@color/edit_box_color"
+                app:hintEnabled="false"
+                app:layout_constraintEnd_toEndOf="@id/facebookTitle"
+                app:layout_constraintStart_toStartOf="@id/facebookTitle"
+                app:layout_constraintTop_toBottomOf="@id/linkedInTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/linkedInText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:hint="Enter linkedIn id (Optional)"
+                    android:inputType="textWebEmailAddress|textUri"
+                    android:selectAllOnFocus="true"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

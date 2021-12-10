@@ -2,7 +2,8 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@color/color_primary" />
 
-<!--    <item  android:bottom="40dp">-->
-<!--        <bitmap android:src="@drawable/splash_drawable_1"/>-->
-<!--    </item>-->
+    <item android:gravity="center">
+        <bitmap android:src="@drawable/logo" />
+    </item>
+
 </layer-list>

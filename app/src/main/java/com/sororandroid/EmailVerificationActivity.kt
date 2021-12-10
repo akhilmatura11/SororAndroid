@@ -11,7 +11,7 @@ class EmailVerificationActivity : AppCompatActivity() {
         val binding = ActivityEmailVerificationBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.verifyButton.setOnClickListener {
+        binding.verifyButtonLayout.setOnClickListener {
             val intent = Intent(this, WelcomeActivity::class.java)
             startActivity(intent)
             finish()

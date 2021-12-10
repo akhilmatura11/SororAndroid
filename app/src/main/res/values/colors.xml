@@ -5,8 +5,10 @@
     <color name="color_primary_dark_pressed">#CF4025</color>
 
     <color name="color_on_primary">#333333</color>
-    <color name="divider_line">#E0E0E0</color>
+    <color name="divider_line">#E4E4E4</color>
     <color name="edit_box_color">#F5F4F5</color>
+    <color name="alert_text">#707070</color>
+    <color name="disabled_color">#B2B2B2</color>
     <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">
         @color/edit_box_color
     </color>
@@ -17,4 +19,5 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="video_action_bar_background">#2B2B2B</color>
 </resources>

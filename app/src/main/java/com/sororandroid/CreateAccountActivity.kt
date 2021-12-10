@@ -12,7 +12,7 @@ class CreateAccountActivity : AppCompatActivity() {
         val binding = ActivityCreateAccountBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.signUpButton.setOnClickListener {
+        binding.signUpButtonLayout.setOnClickListener {
             val intent = Intent(this, EmailVerificationActivity::class.java)
             startActivity(intent)
         }

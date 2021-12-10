@@ -43,9 +43,24 @@
     <string name="action_complete_your_profile">Complete Your Profile</string>
     <string name="subtitle_2_welcome">As a first time user, visit your profile and update your details</string>
     <string name="subtitle_welcome_text">You have registered Successfully!</string>
+    <string name="to_connect">To Connect</string>
+    <string name="to_connect_subtitle">Butterflies, avocados, and all the pretty things around, including You make sense when you have a wonderful friend to talk to!</string>
+    <string name="title_public_profile">Public Profile</string>
+    <string name="title_social_media">Social Media</string>
+    <string name="title_what_s_your_thing">What’s Your Thing</string>
 
     <!--    arrays-->
     <string-array name="countryCode">
         <item>IN +91</item>
     </string-array>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="action_let_connect">Let\'s Connect</string>
+    <string name="action_send">Send</string>
+    <string name="prompt_send_message">Send Message</string>
+    <string name="title_alerts">Alerts</string>
+    <string name="title_connections">Connections</string>
+    <string name="title_profile">My Profile</string>
 </resources>

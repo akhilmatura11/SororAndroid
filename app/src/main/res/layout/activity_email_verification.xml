@@ -8,13 +8,16 @@
 
     <TextView
         android:id="@+id/otpVerificationTitle"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="@string/otp_verification"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,39 +25,34 @@
         android:id="@+id/otpVerificationSubTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/poppins"
         android:text="@string/otp_verification_sub_title_text"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/otpVerificationTitle"
+        app:layout_constraintStart_toStartOf="@id/otpVerificationTitle"
         app:layout_constraintTop_toBottomOf="@id/otpVerificationTitle" />
-
 
     <TextView
         android:id="@+id/enterCodeTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="48dp"
-        android:layout_marginEnd="24dp"
         android:fontFamily="@font/poppins_medium"
         android:text="@string/please_enter_your_code_here_text"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/otpVerificationTitle"
+        app:layout_constraintStart_toStartOf="@id/otpVerificationTitle"
         app:layout_constraintTop_toBottomOf="@id/otpVerificationSubTitle" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/codeConstraintLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/otpVerificationTitle"
+        app:layout_constraintStart_toStartOf="@id/otpVerificationTitle"
         app:layout_constraintTop_toBottomOf="@id/enterCodeTitle">
 
         <com.google.android.material.textfield.TextInputLayout
@@ -62,9 +60,11 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
             app:boxBackgroundColor="@color/edit_box_color"
             app:boxStrokeColor="@color/edit_box_color"
+            app:hintEnabled="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/code2EditTextLayout"
             app:layout_constraintStart_toStartOf="parent"
@@ -74,10 +74,11 @@
                 android:id="@+id/code1EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
                 android:inputType="number"
                 android:maxLength="1"
                 android:selectAllOnFocus="true"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -85,9 +86,11 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
             app:boxBackgroundColor="@color/edit_box_color"
             app:boxStrokeColor="@color/edit_box_color"
+            app:hintEnabled="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/code3EditTextLayout"
             app:layout_constraintStart_toEndOf="@id/code1EditTextLayout"
@@ -97,10 +100,11 @@
                 android:id="@+id/code2EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
                 android:inputType="number"
                 android:maxLength="1"
                 android:selectAllOnFocus="true"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -108,9 +112,11 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
             app:boxBackgroundColor="@color/edit_box_color"
             app:boxStrokeColor="@color/edit_box_color"
+            app:hintEnabled="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/code4EditTextLayout"
             app:layout_constraintStart_toEndOf="@id/code2EditTextLayout"
@@ -120,10 +126,11 @@
                 android:id="@+id/code3EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
                 android:inputType="number"
                 android:maxLength="1"
                 android:selectAllOnFocus="true"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -131,9 +138,11 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
             app:boxBackgroundColor="@color/edit_box_color"
             app:boxStrokeColor="@color/edit_box_color"
+            app:hintEnabled="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/code5EditTextLayout"
             app:layout_constraintStart_toEndOf="@id/code3EditTextLayout"
@@ -143,10 +152,11 @@
                 android:id="@+id/code4EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
                 android:inputType="number"
                 android:maxLength="1"
                 android:selectAllOnFocus="true"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -154,9 +164,11 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
             app:boxBackgroundColor="@color/edit_box_color"
             app:boxStrokeColor="@color/edit_box_color"
+            app:hintEnabled="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/code6EditTextLayout"
             app:layout_constraintStart_toEndOf="@id/code4EditTextLayout"
@@ -166,10 +178,11 @@
                 android:id="@+id/code5EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
                 android:inputType="number"
                 android:maxLength="1"
                 android:selectAllOnFocus="true"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -177,9 +190,11 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
             app:boxBackgroundColor="@color/edit_box_color"
             app:boxStrokeColor="@color/edit_box_color"
+            app:hintEnabled="false"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/code5EditTextLayout"
@@ -189,67 +204,97 @@
                 android:id="@+id/code6EditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
                 android:inputType="number"
                 android:maxLength="1"
                 android:selectAllOnFocus="true"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Body2" />
+                android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/codeReceiveTextLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toTopOf="@id/verifyButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/codeConstraintLayout"
-        app:layout_constraintVertical_bias="0.99">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/otpVerificationTitle"
+        app:layout_constraintStart_toStartOf="@id/otpVerificationTitle"
+        app:layout_constraintTop_toBottomOf="@id/codeConstraintLayout">
 
-        <TextView
-            android:id="@+id/codeReceiveText"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/didn_t_receive_a_code_text"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toTopOf="@id/verifyButtonLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            android:id="@+id/resendCode"
-            android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/codeReceiveText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="@string/didn_t_receive_a_code_text"
+                android:textColor="@color/alert_text"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/resendCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="@font/poppins_semibold"
+                android:gravity="center"
+                android:text="@string/action_resend_code"
+                android:textColor="@color/color_primary_dark"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/codeReceiveText"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/verifyButtonLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:background="?attr/selectableItemBackground"
-            android:fontFamily="@font/poppins_semibold"
-            android:gravity="center"
-            android:text="@string/action_resend_code"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textColor="@color/color_primary_dark"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/codeReceiveText"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:cardBackgroundColor="@color/color_primary_dark"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/verifyButtonText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:text="@string/action_verify"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/verifyButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/action_button_background"
-        android:fontFamily="@font/poppins_medium"
-        android:gravity="center"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:text="@string/action_verify"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

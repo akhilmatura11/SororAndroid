@@ -35,7 +35,8 @@
         android:fontFamily="@font/poppins_semibold"
         android:gravity="center"
         android:text="@string/congratulations_text"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/guideline" />
 
     <TextView
@@ -48,7 +49,8 @@
         android:fontFamily="@font/poppins_medium"
         android:gravity="center"
         android:text="@string/subtitle_welcome_text"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+        android:textSize="14sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/titleWelcome" />
 
     <TextView
@@ -58,45 +60,73 @@
         android:layout_marginStart="48dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="48dp"
+        android:fontFamily="@font/poppins"
         android:gravity="center"
         android:text="@string/subtitle_2_welcome"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+        android:textSize="14sp"
         app:layout_constraintTop_toBottomOf="@id/subTitleWelcome" />
 
-    <TextView
-        android:id="@+id/onBoardingLoginButton"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
-        android:background="@drawable/action_button_background"
-        android:fontFamily="@font/poppins_medium"
-        android:gravity="center"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:text="@string/action_complete_your_profile"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@id/doItLaterWelcome"
-        app:layout_constraintTop_toBottomOf="@id/subTitle2Welcome"
-        app:layout_constraintVertical_bias="0.99" />
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subTitle2Welcome">
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/completeProfileButtonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/color_primary_dark"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toTopOf="@id/doItLaterWelcome">
 
-    <TextView
-        android:id="@+id/doItLaterWelcome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="24dp"
-        android:background="?attr/selectableItemBackground"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="center"
-        android:text="@string/action_do_it_later"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
-        android:textColor="@color/color_primary_dark"
-        app:layout_constraintBottom_toBottomOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp">
+
+                <TextView
+                    android:id="@+id/completeProfileText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackground"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:text="@string/action_complete_your_profile"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/doItLaterWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/poppins_semibold"
+            android:gravity="center"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="@string/action_do_it_later"
+            android:textColor="@color/color_primary_dark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

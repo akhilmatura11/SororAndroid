@@ -14,20 +14,29 @@ class SignUpActivity : AppCompatActivity() {
         binding.loginTextSignUp.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
-        binding.signUpButton.setOnClickListener {
+        binding.signUpButtonLayout.setOnClickListener {
             val intent = Intent(this, EmailVerificationActivity::class.java)
             startActivity(intent)
         }
 
-        binding.root.setOnClickListener {
+        binding.createAccountLayout.setOnClickListener {
             val intent = Intent(this, CreateAccountActivity::class.java)
             startActivity(intent)
         }
 
         binding.backButtonSignUp.setOnClickListener {
             finish()
+        }
+
+        binding.facebookLoginLayout.setOnClickListener {
+            //TODO
+        }
+
+        binding.googleLoginLayout.setOnClickListener {
+            //TODO
         }
     }
 }
